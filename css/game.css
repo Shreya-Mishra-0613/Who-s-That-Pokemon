@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background-image: url(../image/final.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease;
+}
+
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px;
+    padding: 200px;
+    justify-content: left;
+    align-items: center;
+    width: 100%; 
+    max-width: 400px;
+}
+
+.pokemon-card {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    width: 100%; 
+    max-width: 300px; 
+    position: relative;
+    right: 255px;
+    bottom: 25px;
+}
+
+
+.pokemon-details{
+    text-align: left;
+    transform: translateX(-65%);
+}
+
+.silhouette {
+    width: 100%;
+    height: auto;
+    filter: brightness(0); 
+}
+
+.guess-input {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%; 
+    text-align: center;
+}
+
+.play-again-btn {
+    background-color: #2c43eb; 
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 10px; 
+    font-size: 16px; 
+    font-display: bold;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.play-again-btn:hover {
+    background-color: #3b4cca; 
+    color: white; 
+    transform: scale(1.05); 
+}
+
+.play-again-btn:active {
+    transform: scale(0.95); 
+    background-color: #ff6f00; 
+}
